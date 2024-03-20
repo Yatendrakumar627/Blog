@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+  /* color: #7469B6; */
+  background-color: #FFE6E6;
+
+}
+
+.register{
+  background-color: #E1AFD1;
+}
+
+.login {
+  
+}
+
+body{
+  object-fit: fill;
+  background-color: #E1AFD1;
+}
+
+/* GlowingButton.css */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #59D5E0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  animation: glow 1.5s ;
+}
+
+@keyframes glow {
+  from {
+      box-shadow: 0 0 10px #59D5E0;
+  }
+  to {
+      box-shadow: 0 0 10px #59D5E0, 0 0 10px #59D5E0, 0 0 20px #59D5E0, 0 0 30px #59D5E0;
+  }
+}
+
+.text {
+  font-size: 18px;
+  color: #240A34; /* White text color */
+  text-shadow: 0 0 10px #fff; /* Initial glow */
+  transition: text-shadow 0.5s ease-in-out; /* Smooth transition for text-shadow */
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 10px #fff; /* Initial glow */
+  }
+  to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff; /* Stronger glow */
+  }
+}
